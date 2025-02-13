@@ -1,12 +1,16 @@
-import { Tabs } from "expo-router";
+import { Stack } from "expo-router";
+import { FontAwesome } from "@expo/vector-icons";
+import { StyleSheet } from "react-native";
 
 export default function () {
   return (
-    <Tabs>
-      <Tabs.Screen
-        name="index"
-        options={{ title: "For You", headerShown: true }}
-      ></Tabs.Screen>
-    </Tabs>
+    <Stack>
+      <Stack.Screen
+        name="(tabs)"
+        options={{ headerShown: false }}
+      ></Stack.Screen>
+    </Stack>
   );
 }
+
+const styles = StyleSheet.create({});
